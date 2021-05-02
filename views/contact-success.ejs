@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iAcademy</title>
+</head>
+<body>
+  
+  <%- include('partials/nav'); -%>
+
+  <div class="text-left container my-4" my-4>
+  <h3>Thanks <%= data.name %></h3>
+  <p>Here's what we got from you </p>
+  
+  <p> Name: <%= data.name %> </p>
+  <p> Subject: <%= data.subject %>     
+  <p> Email: <%= data.email %></p>
+  <p> Phone Number: <%= data.phone  %></p>
+  <p> Address: <%= data.address  %></p>
+  <p> Elaborate Your Query: <%= data.desc %></p>
+  <p class="text-primary">Note:  We will reply to you at  <%= data.email %></p>
+</div>
+</body>
+</html>
